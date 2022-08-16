@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta keywords="htmls, learn, teach"/> 
+         <title>PRACTICE JS</title>
+         <style>
+            #container{
+                width: 60%;
+                margin: 20px auto;
+                padding: 20px;
+                border: 2px solid rgb(13, 118, 183);
+            }
+            input{
+                width: 100%;
+                display: block;
+                margin: 5px;
+            }
+            #input_Submit{
+                background-color: rgb(37, 101, 174);
+                color: white;
+                width: 100%;
+                margin: 5px;
+                padding: 5px;
+            }
+            small{
+                color: red;
+                text-align: center;
+                visibility: hidden;
+                display: block;
+            }
+         </style>
+    </head>
+    
+</html>
+<body>
+    <div id="container">
+      <h2>Heading</h2>
+       <div id="countparagraph"></div>
+      <p id="para">Hey, you're not permitted in there. It's restricted. You'll be deactivated for sure.. Don't call me a mindless 
+        philosopher, you overweight glob of grease! Now come out before somebody sees you. Secret mission? What 
+        plans? What are you talking about? I'm not getting in there! I'm going to regret this. There goes another one. 
+        Hold your fire. There are no life forms. It must have been short-circuited. That's funny, the damage doesn't look 
+        as bad from out here. Are you sure this things safe? Close up formation. You'd better let her loose. Almost there! 
+        I can't hold them! It's away! It's a hit! Negative. Negative! It didn't go in. It just impacted on the surface. Red 
+        Leader, we're right above you. Turn to point... oh-five, we'll cover for you. Stay there... I just lost my starboard 
+        engine. Get set to make your attack run. The Death Star plans are not in the main computer. Where are those 
+        transmissions you intercepted? What have you done with those plans? We intercepted no transmissions. 
+        Aaah....This is a consular ship. Were on a diplomatic mission. If this is a consular ship...were is the Ambassador? 
+        Commander, tear this ship apart until you've found those plans and bring me the Ambassador. I want her alive! 
+        There she is! Set for stun! She'll be all right. Inform Lord Vader we have a prisoner. What a piece of junk. She'll
+        make point five beyond the speed of light. She may not look like much, but she's got it where it counts, kid. I've 
+        added some special modifications myself. We're a little rushed, so if you'll hurry aboard we'll get out of here. 
+        Hello, sir. Which way? All right, men. Load your weapons! Stop that ship! Blast 'em! Chewie, get us out of here! 
+        Oh, my. I'd forgotten how much I hate space travel. Run, Luke! Run!
+        </p>
+       </div>
+   
+    <script src="file.js"></script>
+    <div id="container">
+           <h1>Registration Form</h1>
+           <form action="" name="myForm" onsubmit="return !!(validation_remplissage() & validation_password() & Registration() & empty_input());">
+            <label for="username" id="username_label">enter username</label>
+            <input  type="text" name="username" onKeyup="button_disabled()">
+            <small id="username">input your username</small>
+            <label for="password" id="password_label">enter password</label>
+            <input type="password" name="password" onKeyup="button_disabled()">
+            <small id="password"> input your password </small>
+            <label for="confirme" id="confirme_label">confirme password</label>
+            <input type="password" name="confirmation" onKeyup="button_disabled() ">
+            <small id="confirme">confirme your password</small>
+            <input id="input_Submit" type="submit" value="Register" disabled="disabled">
+           </form>
+     
+    </div>
+</body>
